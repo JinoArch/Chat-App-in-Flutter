@@ -19,21 +19,16 @@ class _ChatScreenState extends State<ChatScreen> {
             alignment: Alignment.topRight,
             child: Container(
               constraints: BoxConstraints(
-                maxWidth: MediaQuery
-                    .of(context)
-                    .size
-                    .width * 0.80,
+                maxWidth: MediaQuery.of(context).size.width * 0.80,
               ),
               padding: EdgeInsets.all(10),
               margin: EdgeInsets.symmetric(vertical: 10),
               decoration: BoxDecoration(
-                color: Theme
-                    .of(context)
-                    .primaryColor,
+                color: Theme.of(context).primaryColor,
                 borderRadius: BorderRadius.circular(15),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
+                    color: Colors.red.withOpacity(0.5),
                     spreadRadius: 2,
                     blurRadius: 5,
                   ),

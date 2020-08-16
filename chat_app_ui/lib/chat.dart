@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import './screens/home_screen.dart';
+//import './screens/home_screen.dart';
+import './screens/preloader_testing.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,9 +14,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Inbox',
       theme: ThemeData(
-        primaryColor: Color(0xFFeb55ff),
+        primaryColor: Color(0xFFf44336),
       ),
-      home: HomeScreen(),
+      home: SplashScreen(),
+      //home: HomeScreen(),
       );
   }
 }

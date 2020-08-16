@@ -8,17 +8,27 @@ class  HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFFefefef),
       appBar: AppBar(
         brightness: Brightness.dark,
         elevation: 50,
         leading: IconButton(icon: Icon(Icons.menu),
           color: Colors.white,
           onPressed: () {},),
-        title: Text('Dev Cube', style: TextStyle(
-            color: Colors.white
-      ),
-      ),
+        title: Center(child: Text('Harmonium')),
+        flexibleSpace: Container(
+          decoration: new BoxDecoration(
+            gradient: new LinearGradient(
+                colors: [
+                  const Color(0xFFf44336),
+                  const Color(0xFF424242),
+                ],
+                begin: const FractionalOffset(0.0, 0.0),
+                end: const FractionalOffset(1.0, 0.0),
+                stops: [0.0, 1.0],
+                tileMode: TileMode.clamp),
+          ),
+        ),
         actions: <Widget>[
           IconButton(icon: Icon(Icons.search),
             color: Colors.white,
@@ -51,7 +61,7 @@ class  HomeScreen extends StatelessWidget {
                       //shape: BoxShape.circle,
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.grey.withOpacity(0.5),
+                          color: Colors.red.withOpacity(0.5),
                           spreadRadius: 2,
                           blurRadius: 5,
                         ),
@@ -61,7 +71,7 @@ class  HomeScreen extends StatelessWidget {
                   shape: BoxShape.circle,
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
+                      color: Colors.red.withOpacity(0.5),
                       spreadRadius: 2,
                       blurRadius: 5,
                    ),
